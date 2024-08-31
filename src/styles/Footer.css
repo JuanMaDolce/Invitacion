@@ -1,0 +1,18 @@
+.footer {
+    font-family: "Pinyon Script";
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.footer h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.footer h2{
+  font-size: 2rem;
+  text-align: center;
+}
