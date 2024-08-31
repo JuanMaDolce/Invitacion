@@ -38,12 +38,12 @@ const Asistencia = () => {
     <div className='asistencia'>
       <div className='confirmacion'>
           <h1>Confirmación</h1>
-          <p>Confirmar asistencia hasta el 1 de Octubre.</p>
-          <p>En caso de contar con alguna restricción alimentaria como, por ejemplo, celiaco, vegano o vegetariano podés especificarlo debajo en la sección datos importantes.</p>
+          <p className='texto'>Confirmar asistencia hasta el 1 de Octubre.</p>
+          <p className='texto'>En caso de contar con alguna restricción alimentaria como, por ejemplo, celiaco, vegano o vegetariano podés especificarlo debajo en la sección datos importantes.</p>
       </div>
-      <div className='form'>
+      <div className='asistenciaForm'>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className='asistenciaFormDiv'>
             <label htmlFor="nombre">Nombre y Apellido:</label>
             <input
               type="text"
@@ -54,7 +54,7 @@ const Asistencia = () => {
               required
             />
           </div>
-          <div>
+          <div className='asistenciaFormDiv'>
             <label htmlFor="sino">Asistiré / No Asistiré:</label>
             <input
               type="text"
@@ -65,7 +65,7 @@ const Asistencia = () => {
               required
             />
           </div>
-          <div>
+          <div className='asistenciaFormDiv'>
             <label htmlFor="comentarios">Comentarios:</label>
             <textarea
               id="comentarios"

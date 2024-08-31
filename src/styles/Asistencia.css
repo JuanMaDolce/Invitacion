@@ -8,28 +8,28 @@
 }
 
 .asistencia h1,
-p {
-  color: whitesmoke !important;
+.texto {
+  color: whitesmoke;
   text-align: center;
   margin: 20px;
 }
 
 .confirmacion {
-  padding: 10px;
   width: 50%;
 }
 
-.form {
-  padding: 10px 10px ;
+.asistenciaForm {
+  padding: 10px 10px;
   margin: 0 auto;
   width: 50%;
 }
 
-.form div {
+.asistenciaFormDiv{
+  margin: 0 !important;
   margin-bottom: 15px;
   width: 75%;
 }
-.form form{
+.asistenciaForm form{
   width: 100%;
   display: flex;
   align-items: center;
@@ -37,28 +37,32 @@ p {
   flex-direction: column;
 }
 
-.form label {
+.asistenciaForm label {
   align-self: center;
-  width: 100% !important;
-  margin-bottom: 5px;
+  width: 100%;
   color: #faf9f9;
+  font-size: 1.5rem;
 }
 
-.form input[type="text"],
-.form input[type="number"],
-.form textarea {
-  padding: 10px;
+.asistenciaForm input[type="text"],
+.asistenciaForm input[type="number"],
+.asistenciaForm textarea {
   border-radius: 20px;
   font-size: 1em;
   width: 100%;
 }
+.asistenciaForm input {
+  border-radius: 20px;
+  width: 100%;
+  height: 2rem;
+}
 
-.form textarea {
+.asistenciaForm textarea {
   height: 100px;
   resize: none;
 }
 
-.form button {
+.asistenciaForm button {
   color: #faf9f9;
   color: black;
   padding: 10px 20px;
@@ -70,11 +74,11 @@ p {
  
 }
 
-.form button:hover {
+.asistenciaForm button:hover {
   background-color: #b8b6b6;
 }
 
-.form button:active {
+.asistenciaForm button:active {
   background-color: #8a8989;
 }
 
@@ -86,17 +90,17 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 20px !important;
   }
   .confirmacion {
     width: 100%;
   }
   
-  .form {
+  .asistenciaForm {
     width: 90%;
   }
   
-  .form div {
+  .asistenciaFormDiv {
     width: 100%;
   }
 }
