@@ -18,7 +18,6 @@ function App() {
       <Canciones/>
       <Regalos/>
       <Asistencia/>
-
       <Footer/>
     </div>
   );

@@ -5,19 +5,18 @@
     padding: 20px;
     margin: 50px;
     text-align: center;
-    display: inline-block;
     width: fit-content;
 }   
 
 .card p{
     color:#000000 !important;
     width: 100%;
-    margin: 5px 0 ;
+    margin: 5px 0;
+    text-align: center;
 }
 
 
 .card button{
-    color: #faf9f9;
     color: black;
     padding: 10px 20px;
     border: solid  #444444;

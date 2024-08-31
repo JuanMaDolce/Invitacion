@@ -36,6 +36,7 @@ p {
   justify-content: center;
   flex-direction: column;
 }
+
 .form label {
   align-self: center;
   width: 100% !important;
@@ -75,4 +76,27 @@ p {
 
 .form button:active {
   background-color: #8a8989;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .asistencia {
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .confirmacion {
+    width: 100%;
+  }
+  
+  .form {
+    width: 90%;
+  }
+  
+  .form div {
+    width: 100%;
+  }
 }
