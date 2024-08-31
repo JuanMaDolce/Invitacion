@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    height: 200px;
+    height: 10rem;
     width: 100%;
 }
 .box{
@@ -15,11 +15,20 @@
 .box h2{
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .box p{
     text-align: center !important;
-    font-size: 3rem;
+    font-size: 2rem;
     color: aliceblue
-};
+}
+
+@media only screen and (min-device-width : 480px) {
+    .box h2{
+        font-size: 2rem 
+    }
+    .box p{
+        font-size: 3rem
+    }
+}

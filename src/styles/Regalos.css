@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 10px 0px;
 }
 
 .regalos img{
@@ -12,7 +13,8 @@
 .regalos p{
     color: black !important;
     width: 100%;
-    margin: 5px 0 ;
+    margin: 5px 0;
+    text-align: center;
 }
 
 .cbu{
