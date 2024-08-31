@@ -1,17 +1,14 @@
 .asistencia {
   background-color: rgb(31, 30, 30);
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
 }
 
 .asistencia h1,
 .texto {
   color: whitesmoke;
   text-align: center;
-  margin: 20px;
 }
 
 .confirmacion {
@@ -19,13 +16,11 @@
 }
 
 .asistenciaForm {
-  padding: 10px 10px;
-  margin: 0 auto;
+
   width: 50%;
 }
 
 .asistenciaFormDiv{
-  margin: 0 !important;
   margin-bottom: 15px;
   width: 75%;
 }

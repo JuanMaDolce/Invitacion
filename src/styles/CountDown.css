@@ -1,10 +1,10 @@
 .countDown{
     background-color: rgb(36, 35, 35);
-    width: 100%;
     display: flex;
     justify-content: center;
     gap: 10px;
     height: 200px;
+    width: 100%;
 }
 .box{
     display: flex;
