@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Invitacion/static/css/main.3a5e0fb6.css",
+    "main.css": "/Invitacion/static/css/main.9ffae71a.css",
     "main.js": "/Invitacion/static/js/main.4fcc8dae.js",
     "static/media/janos.jpg": "/Invitacion/static/media/janos.21b0708a1d4c88e28f4e.jpg",
     "static/media/2.jpeg": "/Invitacion/static/media/2.07b8c334a758733c3f51.jpeg",
@@ -8,11 +8,11 @@
     "static/media/1.jpeg": "/Invitacion/static/media/1.ceae3f3b2b46c9143903.jpeg",
     "static/media/caja-de-regalo-con-encaje-grande.png": "/Invitacion/static/media/caja-de-regalo-con-encaje-grande.1245757b5b45ee5a50c9.png",
     "index.html": "/Invitacion/index.html",
-    "main.3a5e0fb6.css.map": "/Invitacion/static/css/main.3a5e0fb6.css.map",
+    "main.9ffae71a.css.map": "/Invitacion/static/css/main.9ffae71a.css.map",
     "main.4fcc8dae.js.map": "/Invitacion/static/js/main.4fcc8dae.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a5e0fb6.css",
+    "static/css/main.9ffae71a.css",
     "static/js/main.4fcc8dae.js"
   ]
 }
