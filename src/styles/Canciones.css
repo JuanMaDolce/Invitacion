@@ -10,7 +10,7 @@
   .canciones h1{
     color: whitesmoke !important;
     text-align: center;
-    width: 50%;
+    width: 100%;
     margin: 10px;
   }
   
@@ -36,7 +36,6 @@
   }
   .formCanciones label {
     display: block;
-    font-weight: bold;
     color: #faf9f9;
     font-size: 1.5rem;
   }
