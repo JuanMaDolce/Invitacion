@@ -7,6 +7,7 @@ import Asistencia from './components/Asistencia/Asistencia';
 import Regalos from './components/Regalos/Regalos';
 import Canciones from './components/Canciones/Canciones';
 import Footer from './components/Footer/Footer';
+import Separador from './components/Separador/Separador';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <CountDown/>
       <Carrusel/>
+      <Separador/>
       <Card/>
       <Canciones/>
       <Regalos/>
