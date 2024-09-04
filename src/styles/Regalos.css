@@ -39,7 +39,7 @@
   }
 
   .datos-container {
-    margin: 10px;
+    padding-bottom: 20px;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
