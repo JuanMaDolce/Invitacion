@@ -21,7 +21,9 @@ const Regalos = () => {
             <p>Pero si querés tener un detalle con nosotros, bienvenido sea!</p>
             <div className='cbu'>
                 <div className={`datos-container ${showText ? 'show' : 'hide'}`}>
-                    <p>CBU 0140000703100038365764 (Juan Manuel Dolce / Maria Cecilia Torres)</p>
+                    <p>CBU 0140000703100038365764</p>
+                    <p>CBU USD 0140000704100052548928</p>
+                    <p>(Juan Manuel Dolce / Maria Cecilia Torres)</p>
                 </div>
                 <button onClick={handleClick}>
                     {showText ? 'Ver Datos' : 'Ver Datos'}

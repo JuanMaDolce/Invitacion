@@ -8,15 +8,7 @@
   }
   
 .footer h1{
-  font-size: 2rem;
-  text-align: center;
-  font-family: "Cormorant SC", serif !important;
-  font-weight: 300 !important;
-  font-style: normal !important;
-}
-
-.footer h2{
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   font-family: "Cormorant SC", serif !important;
   font-weight: 300 !important;
@@ -24,5 +16,13 @@
 }
 
 .fin{
-  width: 500px;
+  max-width: 100vh;
+  border-radius: 20px;
+
+}
+
+@media only screen and (min-device-width : 250px) and (max-device-width : 480px) {
+  .fin{
+    max-width: 50vh;
+  }
 }

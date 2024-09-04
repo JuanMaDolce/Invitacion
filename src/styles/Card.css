@@ -8,6 +8,10 @@
     margin: 20px;
 }   
 
+.card h1,h2{
+  font-weight: 400;
+}
+
 .card p{
     color:#000000 !important;
     width: 100%;

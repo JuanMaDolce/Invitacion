@@ -7,6 +7,12 @@ import { db } from '../../firebase/config';
 
 const Canciones = () => {
 
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   const [formData, setFormData] = useState({
     primera: '',
     segunda: '',
@@ -35,6 +41,7 @@ const Canciones = () => {
         segunda: '',
         tercera: '',
     });
+    toggleModal()
   };
 
   return (
@@ -43,40 +50,49 @@ const Canciones = () => {
         <h1>Elegi 3 canciones que no pueden faltar!</h1>
         <div className='formCanciones'>
             <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="Primer Canción">Primer Canción:</label>
-                    <input
-                    type="text"
-                    id="primera"
-                    name="primera"
-                    value={formData.primera}
-                    onChange={handleChange}
-                    required
-                    />
-            </div>
-            <div>
-                <label htmlFor="Segunda Canción">Segunda Canción:</label>
-                    <input
-                    type="text"
-                    id="segunda"
-                    name="segunda"
-                    value={formData.segunda}
-                    onChange={handleChange}
-                    required
-                    />
-            </div>
-            <div>
-                <label htmlFor="Tecer Canción">Tercer Canción:</label>
-                    <input
-                    type="text"
-                    id="tercera"
-                    name="tercera"
-                    value={formData.tercera}
-                    onChange={handleChange}
-                    required
-                    />
-            </div>
-            <button type="submit">Enviar</button>
+              <div>
+                  <label htmlFor="Primer Canción">Primer Canción:</label>
+                      <input
+                      type="text"
+                      id="primera"
+                      name="primera"
+                      value={formData.primera}
+                      onChange={handleChange}
+                      required
+                      />
+              </div>
+              <div>
+                  <label htmlFor="Segunda Canción">Segunda Canción:</label>
+                      <input
+                      type="text"
+                      id="segunda"
+                      name="segunda"
+                      value={formData.segunda}
+                      onChange={handleChange}
+                      required
+                      />
+              </div>
+              <div>
+                  <label htmlFor="Tecer Canción">Tercer Canción:</label>
+                      <input
+                      type="text"
+                      id="tercera"
+                      name="tercera"
+                      value={formData.tercera}
+                      onChange={handleChange}
+                      required
+                      />
+              </div>
+              <button type="submit">Enviar</button>
+
+              {modal && (
+                  <div className="modal-content-canciones">
+                    <h2>Canciones Enviadas!</h2>
+                    <button className="close-modal" onClick={toggleModal}>
+                      X
+                    </button>
+                  </div>
+              )}
             </form>
       </div>
     </div>

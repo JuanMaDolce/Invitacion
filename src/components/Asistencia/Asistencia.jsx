@@ -6,6 +6,12 @@ import { db } from '../../firebase/config';
 
 const Asistencia = () => {
 
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   const [formData, setFormData] = useState({
     sino: '',
     nombre: '',
@@ -31,6 +37,7 @@ const Asistencia = () => {
       nombre: '',
       comentarios: '',
     });
+    toggleModal()
   };
 
   return (
@@ -38,8 +45,8 @@ const Asistencia = () => {
     <div className='asistencia'>
       <div className='confirmacion'>
           <h1>Confirmación</h1>
-          <p className='texto'>Confirmar asistencia hasta el 1 de Octubre.</p>
-          <p className='texto'>En caso de contar con alguna restricción alimentaria como, por ejemplo, celiaco, vegano o vegetariano podés especificarlo debajo en la sección datos importantes.</p>
+          <p className='texto'>Confirmar asistencia hasta el 20 de Septiembre.</p>
+          <p className='texto'>En caso de contar con alguna restricción alimentaria como, por ejemplo, celiaco, vegano o vegetariano podés especificarlo debajo en la sección de comentarios.</p>
       </div>
       <div className='asistenciaForm'>
         <form onSubmit={handleSubmit}>
@@ -75,8 +82,17 @@ const Asistencia = () => {
             />
           </div>
           <button type="submit">Enviar</button>
+          {modal && (
+                  <div className="modal-content-asistencia">
+                    <h2>Asistencia Enviada!</h2>
+                    <button className="close-modal" onClick={toggleModal}>
+                      X
+                    </button>
+                  </div>
+              )}
         </form>
       </div>
+      
     </div>
   );
 }
