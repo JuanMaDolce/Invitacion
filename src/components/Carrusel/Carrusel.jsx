@@ -4,9 +4,11 @@ import { Photos } from "../../assets/Photos"
 import '../../styles/Gallery.css'
 
 
+
 const Carrusel = () => {
+        
         return(
-                <Gallery additionalClass='gallery'
+                <Gallery  additionalClass='gallery'
                 items={Photos}
                 showPlayButton={false}
                 autoPlay={false}

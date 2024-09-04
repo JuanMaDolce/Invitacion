@@ -39,3 +39,9 @@
 .card img{
    width: 100%;
 }
+
+.date h1,
+.date h2{
+    color: black;
+    padding-bottom: 10px;
+}
