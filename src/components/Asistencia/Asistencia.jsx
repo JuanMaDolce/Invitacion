@@ -45,7 +45,6 @@ const Asistencia = () => {
     <div className='asistencia'>
       <div className='confirmacion'>
           <h1>Confirmación</h1>
-          <p className='texto'>Confirmar asistencia hasta el 20 de Septiembre.</p>
           <p className='texto'>En caso de contar con alguna restricción alimentaria como, por ejemplo, celiaco, vegano o vegetariano podés especificarlo debajo en la sección de comentarios.</p>
       </div>
       <div className='asistenciaForm'>

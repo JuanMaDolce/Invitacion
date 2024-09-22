@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion';
 import '../../styles/Header.css'
-import fondo from "../../assets/foto fondo 2.jpg" 
 
 const Header = () => {
 
@@ -29,9 +28,11 @@ const Header = () => {
                         y: 0,
                         },
                     }}
-                transition={{duration: 0.8, ease: [1,1,.8,1]}}>
+                transition={{
+                            duration: 0.8,
+                            ease: [1,1,.8,1],
+                            }}>
                     Ceci & Juanma</motion.h1>
-            <img src={fondo} alt="foto fondo header" />
             <motion.h2
                 ref={containerRef} 
                 animate={mainControls}
@@ -43,8 +44,11 @@ const Header = () => {
                         y: 0,
                         },
                     }}
-                transition={{duration: 0.8, ease: [1,1,.8,1]}}
-            >Nos Casamos!</motion.h2>
+                transition={{
+                    duration: 0.8,
+                    ease: [1,1,.8,1],
+                    }}>
+                Nos Casamos!</motion.h2>
         </div>
     )
 }
